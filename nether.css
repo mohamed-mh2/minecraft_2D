@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gamemap{
+   background-image: url(./materialnether/sky.webp);
+    display: grid;
+    flex: 1;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+}
+
+.inventory img{
+    width: 10vh;
+    height: 10vh;
+}
+
+.inventory img:hover{
+    border: 2px solid white;
+    background-color: aliceblue;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: none;
+    gap: clamp(10px, 5vh, 100px);
+    width: 14vw;
+    justify-content: space-evenly;
+    height: 100vh;
+    gap: 0;
+}
+
+
+.tools img {
+    width: 10vh;
+    height: 10vh;
+}
+
+
+.inventory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(37, 0, 61);
+    /* gap: clamp(10px, 5vh, 100px); */
+    gap: 0;
+    width: 14vw;
+    justify-content: space-evenly; 
+    height: 84vh;  
+    border-radius: 20px;
+}
+
+.pagebtn{
+    display: flex;
+    align-items: center;
+    background-color: none;
+    margin-top: 3vh;
+    gap: clamp(10px, 5vh, 100px);
+}
+
+.exitbtn{
+    width: clamp(3.5vh, 10vw, 7vh);
+    height: clamp(2vh, 10vh, 5vh);
+    background-color: rgb(179, 3, 3);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.resetbtn{
+    width: clamp(3.5vh, 10vw, 7vh);
+    height: clamp(2vh, 10vh, 5vh);
+    background-color: rgb(3, 129, 3);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+
+.inventory button:hover{
+    scale: calc(1.2);
+    font-size: 2.2vh;
+    
+}
+
+
+.selected{
+    border: 4px solid #001eff;
+    border-radius: 20px;
+    background-color: seashell;
+    filter: drop-shadow(0 0 8px yellow);
+}
+
+.open{
+    border: 0px solid #001eff;
+    border-radius: 20px;
+    background-color: seashell;
+    filter: drop-shadow(0 0 8px yellow);
+}
+
+.closed{
+    border:none;
+    background-color: transparent;
+    filter: none;
+}
+
+
+.tile{
+    /* height: 70px;
+    width: 70px; */
+    width: var(--tile-size, 7vh);
+    height: var(--tile-size, 7vh);
+}
+
+.tile:hover{
+    /* border: 1px solid white; */
+    box-shadow: inset 0 0 0 1px white;
+}
+
+.dirt{
+    background-image: url(./materialnether/dirt.webp);
+    background-size: cover;
+}
+
+.grass{
+    background-image: url(./materialnether/grass.webp);
+    background-size: cover;
+}
+
+
+.redwart{
+    background-image: url(./materialnether/Nether_Wart_Block_29_JE3_BE3.webp);
+    background-size: cover;
+}
+
+.gold{
+    background-image: url(./materialnether/gold.webp);
+    background-size: cover;
+}
+
+
+
+.sky{
+    background-image: url(./materialnether/sky.webp);
+}
+
+.grassdirt{
+
+    background-image: url(./materialnether/grassdirt.webp);
+    background-size: cover;
+}
+
+
+.nabat1{
+    background-image: url(./materialnether/nabat.webp);
+    background-size: cover;
+}
+
+.nabat2{
+    background-image: url(./materialnether/nabat2.webp);
+    background-size: cover;
+}
+
+.nabat3{
+    background-image: url(./materialnether/nabat3.webp);
+    background-size: cover;
+}
+
+.foqo{
+    background-image: url(./materialnether/foqo3.webp);
+    background-size: cover;
+}
+
+.sand{
+    background-image: url(./materialnether/sand.webp);
+    background-size: cover;
+}
+
+.white{
+    background-image: url(./materialnether/quartz.webp);
+    background-size: cover;
+}
+
+.wrapdirt{
+    background-image: url(./materialnether/wrapddirt.webp);
+    background-size: cover;
+}
+
+.lava{
+    background-image: url(./materialnether/lavamotion.gif);
+    background-size: cover;
+}
+
+.redflame{
+    background-image: url(./materialnether/flame.gif);
+    background-size: cover;
+}
+
+.blueflame{
+    background-image: url(./materialnether/blueflame.gif);
+    background-size: cover;
+}
+
+.magma{
+    background-image: url(./materialnether/Magma.png);
+    background-size: cover;
+}
+
+.glowstone{
+    background-image: url(./materialnether/Glowstone.png);
+    background-size: cover;
+}
+
+.stone{
+    background-image: url(./materialimg/stone.webp);
+    background-size: cover;
+}
+
+.brick{
+    background-image: url(./materialnether/netherbrick.jpg);
+    background-size: cover;
+}
+
+.rare{
+    background-image: url(./materialnether/Ancient_Debris.png);
+    background-size: cover;
+}
+
+.lavabucket{
+    background-image: url(./materialnether/lavabucket.webp);
+    background-size: cover;
+}
+
+
+
+.smallpig, .whiteenemy, .enemy, .fly,
+.balckskeleton, .pigilin, .skeleton {
+    position: relative;
+    overflow: visible;
+    background: transparent;
+}
+
+
+.smallpig::after      { background-image: url(./materialnether/smallpig.png); }
+.whiteenemy::after    { background-image: url(./materialnether/whiteenemy.png); }
+.enemy::after         { background-image: url(./materialnether/enemy.png); }
+.fly::after           { background-image: url(./materialnether/fly.webp); }
+.balckskeleton::after { background-image: url(./materialnether/balckskeleton.webp); }
+.pigilin::after       { background-image: url(./materialnether/pigilin.png); }
+.skeleton::after      { background-image: url(./materialnether/skeleton.png); }
+
+
+.smallpig::after, .whiteenemy::after, .enemy::after, .fly::after,
+.balckskeleton::after, .pigilin::after, .skeleton::after {
+    content: '';
+    position: absolute;
+    bottom: 0;           
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;         
+    height: 200%;        
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    pointer-events: none; 
+    z-index: 10;
+}
+
+
+
+.smallpig_left, .whiteenemy_left, .enemy_left,
+.fly_left, .balckskeleton_left, .pigilin_left, .skeleton_left {
+    position: relative;
+    overflow: visible;
+    background: transparent;
+}
+
+.smallpig_left::after      { background-image: url(./materialnether/smallpig.png); }
+.whiteenemy_left::after    { background-image: url(./materialnether/whiteenemy.png); }
+.enemy_left::after         { background-image: url(./materialnether/enemy.png); }
+.fly_left::after           { background-image: url(./materialnether/fly.webp); }
+.balckskeleton_left::after { background-image: url(./materialnether/balckskeleton.webp); }
+.pigilin_left::after       { background-image: url(./materialnether/pigilin.png); }
+.skeleton_left::after      { background-image: url(./materialnether/skeleton.png); }
+
+.smallpig_left::after, .whiteenemy_left::after, .enemy_left::after,
+.fly_left::after, .balckskeleton_left::after, .pigilin_left::after,
+.skeleton_left::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(-1);
+    width: 150%;
+    height: 200%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    pointer-events: none;
+    z-index: 10;
+}
+
+
+.wrong_tool{
+   
+    box-shadow: inset 0 0 0 3px red;
+}
+
+.wrong_tool:hover{
+    
+    box-shadow: inset 0 0 0 3px red;
+
+}
+
+
+.bag{
+    background-image: url(./materialimg/bagimg.webp);
+    background-size: contain;
+    width: 145vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    position: absolute;
+    left: 25vh;
+    top: 101%;
+    border: 1px solid black;
+    border-radius: 20px;
+    
+
+}
+
+
+.bag div{
+    border: 0 solid black;
+    height: 6.9vh;
+    width: 6.9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.closed2{
+    border:none;
+    background-color: transparent;
+    filter: none;
+    background-image: none;
+    display: none;
+}
+
+.bag div:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+.bag p {
+    /* align-self: center; */
+    margin-left: 0.4vh;
+    display: flex;
+    background-color: rgb(206, 200, 200);
+    width: 25%;
+    padding-left: 5%;
+    height: auto;
+    border-radius: 7px;
+    color: rgb(145, 14, 14);
+    font-size: 1.9vh;
+    font-weight: bold;
+}
+.mobbag p {
+    /* align-self: center; */
+    margin-left: 0.4vh;
+    display: flex;
+    background-color: rgb(206, 200, 200);
+    width: 40%;
+    padding-left: 5%;
+    height: auto;
+    border-radius: 7px;
+    color: rgb(145, 14, 14);
+    font-size: 1.9vh;
+    font-weight: bold;
+    position: relative;
+    top: 3vh;
+}
+
+
+.mobbag {
+    background-image: url(./materialimg/bagimg.webp);
+    background-size: contain;
+    width: 195vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    position: absolute;
+    left: 1vh;
+    top: 101%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 5vh;
+}
+
+
+.mobbag .smallpig::after, .mobbag .whiteenemy::after,
+.mobbag .enemy::after, .mobbag .fly::after,
+.mobbag .balckskeleton::after, .mobbag .pigilin::after,
+.mobbag .skeleton::after,
+.mobbag .smallpig_left::after, .mobbag .whiteenemy_left::after,
+.mobbag .enemy_left::after, .mobbag .fly_left::after,
+.mobbag .balckskeleton_left::after, .mobbag .pigilin_left::after,
+.mobbag .skeleton_left::after {
+    width: 10vh;
+    height: 10vh;
+}
+
+
+
+.mobbag.closed2 {
+    display: none;
+}
+
+
+.mobbag div {
+    border: 0 solid black;
+    height: 6.9vh;
+    width: 6.9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: visible;
+}
+
+.mobbag div:hover {
+    border: 2px solid white;
+    cursor: pointer;
+}
+

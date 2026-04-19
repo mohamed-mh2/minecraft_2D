@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gamemap{
+    background-color: aqua;;
+    display: grid;
+    flex: 1;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+}
+
+.inventory img{
+    width: 10vh;
+    height: 10vh;
+}
+
+.inventory img:hover{
+    border: 2px solid white;
+    background-color: aliceblue;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(2, 52, 2);
+    gap: clamp(10px, 5vh, 100px);
+    width: 14vw;
+    justify-content: space-evenly;
+    height: 100vh;
+    gap: 0;
+}
+
+
+.tools img {
+    width: 10vh;
+    height: 10vh;
+}
+
+
+.inventory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(2, 52, 2);
+    /* gap: clamp(10px, 5vh, 100px); */
+    gap: 0;
+    width: 14vw;
+    justify-content: space-evenly; 
+    height: 77vh;  
+    border-radius: 20px;
+}
+
+.pagebtn{
+    display: flex;
+    align-items: center;
+    background-color: rgb(2, 52, 2);
+    margin-top: 3vh;
+    gap: clamp(10px, 5vh, 100px);
+}
+
+.exitbtn{
+    width: clamp(3.5vh, 10vw, 7vh);
+    height: clamp(2vh, 10vh, 5vh);
+    background-color: rgb(179, 3, 3);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.resetbtn{
+    width: clamp(3.5vh, 10vw, 7vh);
+    height: clamp(2vh, 10vh, 5vh);
+    background-color: rgb(3, 129, 3);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+
+.inventory button:hover{
+    scale: calc(1.2);
+    font-size: 2.2vh;
+    
+}
+
+
+.selected{
+    border: 4px solid #001eff;
+    border-radius: 20px;
+    background-color: seashell;
+    filter: drop-shadow(0 0 8px yellow);
+}
+
+.open{
+    border: 0px solid #001eff;
+    border-radius: 20px;
+    background-color: seashell;
+    filter: drop-shadow(0 0 8px yellow);
+}
+
+.closed{
+    border:none;
+    background-color: transparent;
+    filter: none;
+}
+
+
+.tile{
+    /* height: 70px;
+    width: 70px; */
+    width: var(--tile-size, 7vh);
+    height: var(--tile-size, 7vh);
+}
+
+.tile:hover{
+    /* border: 1px solid white; */
+    box-shadow: inset 0 0 0 1px white;
+}
+
+.dirt{
+    background-image: url(./materialimg/dirt.webp);
+    background-size: cover;
+}
+
+.grass{
+    background-image: url(./materialimg/Azalea_29_JE1.webp);
+    background-size: cover;
+}
+
+.coal_ore{
+    background-image: url(./materialimg/Coal_Ore_29_JE5_BE4.webp);
+    background-size: cover;
+}
+
+.stoneblock{
+    background-image: url(./materialimg/stone.webp);
+    background-size: cover;
+}
+
+.daimond_ore{
+    background-image: url(./materialimg/Diamond_Ore_29_JE5_BE5.webp);
+    background-size: cover;
+}
+
+.gold_ore{
+    background-image: url(./materialimg/Gold_Ore_29_JE7_BE4.webp);
+    background-size: cover;
+}
+
+.red_ore{
+    background-image: url(./materialimg/Redstone_Ore_29_JE4_BE3.webp);
+    background-size: cover;
+}
+
+.coal{
+    background-image: url(./materialimg/Block_of_Coal_29_JE3_BE2.webp);
+    background-size: cover;
+}
+
+.daimond{
+    background-image: url(./materialimg/Block_of_Diamond_29_JE4_BE3.webp);
+    background-size: cover;
+}
+
+.gold{
+    background-image: url(./materialimg/Block_of_Gold_29_JE5_BE3.webp);
+    background-size: cover;
+}
+
+.red{
+    background-image: url(./materialimg/Block_of_Redstone_29_JE2_BE2.webp);
+    background-size: cover;
+}
+
+.cloud{
+    background-image: url(./materialimg/cloud.webp);
+    background-size: cover;
+}
+
+.sky{
+    background-color: aqua;
+}
+
+.grassblock{
+    background-image: url(./materialimg/Grass_Block.webp);
+    background-size: cover;
+}
+
+.graygrass{
+    background-image: url(./materialimg/gray_Grass_Block.webp);
+    background-size: cover;
+}
+
+.flower1{
+    background-image: url(./materialimg/Red_Tulip_29_JE2_BE2.webp);
+    background-size: cover;
+}
+
+.flower2{
+    background-image: url(./materialimg/Rose_Bush_29_JE2_BE3.webp);
+    background-size: cover;
+}
+
+.flower3{
+    background-image: url(./materialimg/Torchflower_Crop_29_JE1.webp);
+    background-size: cover;
+}
+
+.potato{
+    background-image: url(./materialimg/Potatoes_Age_3_29_JE2_BE2.webp);
+    background-size: cover;
+}
+
+.woodlog{
+    background-image: url(./materialimg/Oak_Log_29_JE4_BE2.webp);
+    background-size: cover;
+}
+
+.bambo{
+    background-image: url(./materialimg/Block_of_Bamboo_29_JE1.webp);
+    background-size: cover;
+}
+
+.blank{
+    background-image: url(./materialimg/Blank-sign-oak_JE2_BE2.webp);
+    background-size: cover;
+}
+
+.grassblock2{
+    background-image: url(./materialimg/Moss_Block_29_JE1.webp);
+    background-size: cover;
+}
+
+.glass{
+    background-image: url(./materialimg/Glass.webp);
+    background-size: cover;
+}
+
+.darkwood{
+    background-image: url(./materialimg/Dark_Oak.webp);
+    background-size: cover;
+}
+
+
+.wrong_tool{
+   
+    box-shadow: inset 0 0 0 3px red;
+}
+
+.wrong_tool:hover{
+    
+    box-shadow: inset 0 0 0 3px red;
+
+}
+
+
+.bag{
+    background-image: url(./materialimg/bagimg.webp);
+    background-size: contain;
+    width: 128vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    border: 1px solid black;
+    border-radius: 20px;
+    
+
+}
+
+
+.bag div{
+    border: 0 solid black;
+    height: 6.9vh;
+    width: 6.9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.closed2{
+    border:none;
+    background-color: transparent;
+    filter: none;
+    background-image: none;
+    display: none;
+}
+
+.bag div:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+.bag p{
+    /* align-self: center; */
+    margin-left: 0.4vh;
+    display: flex;
+    background-color: rgb(206, 200, 200);
+    width: 25%;
+    padding-left: 5%;
+    height: auto;
+    border-radius: 7px;
+    color: rgb(145, 14, 14);
+    font-size: 1.9vh;
+    font-weight: bold;
+}
+
+
+.goldbag{
+    background-image: url(./materialimg/goldblock.webp);
+    background-size: cover;
+}
+
+.coalbag{
+    background-image: url(./materialimg/coalblock.webp);
+    background-size: cover;
+}
+
+.daimondbag{
+    background-image: url(./materialimg/daimondblock.webp);
+    background-size: cover;
+}
+
+.redbag{
+    background-image: url(./materialimg/redblock.webp);
+    background-size: cover;
+}
+
+
+.grasdirtbag{
+    background-image: url(./materialimg/Grass_Block.webp);
+    background-size: cover;
+}
+
+
+.dirtbag{
+    background-image: url(./materialimg/dirt.webp);
+    background-size: cover;
+}
+
+
+.grassbag{
+    background-image: url(./materialimg/Moss_Block_29_JE1.webp);
+    background-size: cover;
+}
+
+
+.woodbag{
+    background-image: url(./materialimg/Oak_Log_29_JE4_BE2.webp);
+    background-size: cover;
+}   
+
+
+.stonebag{
+    background-image: url(./materialimg/stone.webp);
+    background-size: cover;
+}

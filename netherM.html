@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nether.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="inventory">
+        <div class="pagebtn">
+            <button class="exitbtn">Exit ↩</button>
+            <button class="resetbtn">Reset ⟳</button>
+        </div>
+
+        <div class="tools">
+            <img class="picaxe unselected" src="./mainpageimg/pickaxe2.png" alt="picaxe">
+       
+            <img class="axe unselected" src="./mainpageimg/axe.webp" alt="axe">
+       
+            <img  class="shovel unselected" src="./mainpageimg/shovel.webp" alt="shovel">
+
+            <img  class="sword unselected"  src="./mainpageimg/sword.webp" alt="sword">
+        </div>
+
+        <div class="storage closed">
+            <img src="./materialimg/inventorybox.webp" alt="">
+        </div>
+
+
+        <div class="mobstorag closed">
+            <img style="height: 13vh; width: 13vh; margin-top: 1vh;" src="./mainpageimg/mobchest.png" alt="">
+        </div>
+
+        <div class="lookdown" style="display: none; background-color: rgb(255, 255, 255); margin-top: 3vh; border-radius: 20px; padding: 1vh;">
+            <p>Scroll down for the bag</p>
+            <img src="./mainpageimg/arrow.png" alt="">
+        </div>
+
+    </section>
+    
+    <audio id="removesound">
+    <source src="./sounds/remove.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="clickedsound">
+    <source src="./sounds/clicked.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="buttonsound">
+    <source src="./sounds/button1.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="glasssound">
+    <source src="./sounds/Glass_dig1.ogg" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="orebreak">
+    <source src="./sounds/Iron_break5.ogg.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="blocksound">
+    <source src="./sounds/blockplace.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="swordsound">
+    <source src="./sounds/swordsound.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- ######################################################################### -->
+    <audio id="zombipigDeath">
+        <source src="./mobsounds/Zombie_pigman_angry2.ogg" type="audio/mpeg">
+    </audio>
+    <audio id="zombipigTouch">
+        <source src="./mobsounds/Zombie_pigman_hurt1.ogg" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="smallpigDeath">
+        <source src="./mobsounds/smallpigDsound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="smallpigTouch">
+        <source src="./mobsounds/smallpigtouch.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="skeletonDeath">
+        <source src="./mobsounds/Skeleton_death.ogg" type="audio/mpeg">
+    </audio>
+    <audio id="skeletonTouch">
+        <source src="./mobsounds/Skeleton_hurt3.ogg" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="yellowDeath">
+        <source src="./mobsounds/yellow_death.ogg" type="audio/mpeg">
+    </audio>
+    <audio id="yellowTouch">
+        <source src="./mobsounds/yellow_touch.ogg" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="redDeath">
+        <source src="./mobsounds/redfly_death2.ogg.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="redTouch">
+        <source src="./mobsounds/redfly_hurt3.ogg.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="whiteDeath">
+        <source src="./mobsounds/whitefly_death.ogg" type="audio/mpeg">
+    </audio>
+    <audio id="whiteTouch">
+        <source src="./mobsounds/whitefly_idle1.ogg" type="audio/mpeg">
+    </audio>
+    <audio id="whiteDeath2">
+        <source src="./mobsounds/whitefly_charge.ogg" type="audio/mpeg">
+    </audio>
+
+    <section class="gamemap">
+        
+    </section>
+    
+    <section class="bag closed2">
+
+    </section>
+
+    <section class="mobbag closed2">
+
+    </section>
+
+
+    <script src="nether.js"></script>
+</body>
+</html>

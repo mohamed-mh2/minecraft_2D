@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="map.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="inventory">
+        <div class="pagebtn">
+            <button class="exitbtn">Exit ↩</button>
+            <button class="resetbtn">Reset ⟳</button>
+        </div>
+
+        <div class="tools">
+            <img class="picaxe unselected" src="./mainpageimg/pickaxe2.png" alt="picaxe">
+       
+            <img class="axe unselected" src="./mainpageimg/axe.webp" alt="axe">
+       
+            <img  class="shovel unselected" src="./mainpageimg/shovel.webp" alt="shovel">
+        </div>
+
+        <div class="storage closed">
+            <img src="./materialimg/inventorybox.webp" alt="">
+        </div>
+
+    </section>
+    
+    <audio id="removesound">
+    <source src="./sounds/remove.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="clickedsound">
+    <source src="./sounds/clicked.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="buttonsound">
+    <source src="./sounds/button1.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="glasssound">
+    <source src="./sounds/Glass_dig1.ogg" type="audio/mpeg">
+    </audio>
+
+
+    <audio id="orebreak">
+    <source src="./sounds/Iron_break5.ogg.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="blocksound">
+    <source src="./sounds/blockplace.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <section class="gamemap">
+        
+    </section>
+    
+    <section class="bag closed2">
+
+    </section>
+
+    <script src="map.js"></script>
+</body>
+</html>
